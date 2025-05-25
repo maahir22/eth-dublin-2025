@@ -99,10 +99,10 @@ contract TaskEscrow is FunctionsClient {
             "if (status === 'validated') {"
                 "return Functions.encodeUint256(1);"
             "} else {"
-                "return Functions.encodeUint256(1);"
+                "return Functions.encodeUint256(0);"
             "}"
         "} catch (e) {"
-            "return Functions.encodeUint256(1);"
+            "return Functions.encodeUint256(0);"
         "}";
         
         req.initializeRequest(
